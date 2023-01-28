@@ -1,0 +1,436 @@
+/* mini-header section */
+.mini-header {
+  background-color: var(--secondary-color);
+}
+
+.mini-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+/* left section */
+.mini-left {
+  display: flex;
+  align-items: center;
+  margin: 0 -10px;
+}
+
+.mini-left .social-icon {
+  margin: 0 10px;
+}
+
+.mini-left .fa-brands {
+  color: #fff;
+}
+
+/* right sectioni */
+
+.profile {
+  height: 30px;
+  width: 30px;
+}
+
+.profile img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* main header */
+.main-header {
+  background-color: var(--primary-color);
+}
+.main-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text {
+  color: #fff;
+}
+
+/* right section */
+.main-nav {
+  display: flex;
+  margin: 0 -15px;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+/* caresoul section */
+
+.mySlides {
+  display: none;
+  height: calc(100vh - 120px);
+}
+
+.mySlides img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-shadow: 0 0 5px #00000090;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot-box {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: var(--primary-color);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* about section */
+.about-box {
+  display: flex;
+}
+
+.about-left,
+.about-right {
+  flex: 0 0 50%;
+}
+
+.about-left {
+  height: 500px;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-left img {
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-right {
+  padding: 0 30px;
+}
+
+.about-right h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.about-right p {
+  font-size: 25px;
+}
+
+/* feature section */
+
+.feature-section {
+  margin-top: 30px;
+}
+
+.feature-title h3 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.feature-tab {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.feature-box {
+  margin: 0 10px;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-desc p {
+  font-size: 20px;
+}
+
+.feature-icon .fa-solid {
+  font-size: 40px;
+}
+
+.feature-title h4 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+/* counter section */
+.counter-section {
+  padding: 30px;
+  margin-top: 30px;
+  background-color: var(--primary-color);
+}
+
+.counter-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter-tab {
+  text-align: center;
+}
+
+.counter-number {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.counter-title {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* quote container */
+.quote-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.quote-slide {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.quote-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.quote-dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+}
+
+/* footer section */
+.footer-section {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-box {
+  display: flex;
+}
+
+/* footer left */
+.footer-left {
+  flex: 0 0 25%;
+}
+
+.footer-logo {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footer-left .social-icon {
+  margin: 0 -5px;
+}
+
+.footer-left .social-icon .fa-brands {
+  margin: 0 5px;
+}
+
+/* footer right */
+.footer-right {
+  flex: 0 0 75%;
+  display: flex;
+}
+
+.footer-tab {
+  flex: 0 0 25%;
+}
+
+.footer-title {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  line-height: 1.8;
+  color: #fff;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-input {
+  border: 1px solid var(--primary-color);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 8px 25px;
+  font-size: 20px;
+  flex: 0 0 auto;
+}
+
+.footer-btn {
+  flex: 0 0 auto;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 8px 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+}
